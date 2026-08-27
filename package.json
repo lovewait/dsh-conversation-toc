@@ -1,0 +1,27 @@
+{
+  "name": "dsh-conversation-toc",
+  "version": "0.1.0",
+  "description": "对话目录插件：在当前会话页面展示所有对话记录，点击记录自动定位（滚动）到对应消息。A conversation-outline plugin for the dsh web GUI — scans the chat transcript and renders a floating outline; clicking an entry scrolls to that message.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT"
+}

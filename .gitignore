@@ -1,0 +1,10 @@
+# 打包产物（tarball 请走 GitHub Release 附件，不入库）
+*.tgz
+
+# 依赖与缓存
+node_modules/
+.npm-cache/
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
